@@ -29,7 +29,9 @@ Student.name="Zhanerke"
 console.log(Student.name);
 
 function calc(Student){
-	return ((Student.points.stp+Student.points.js+Student.points.ps+Student.points.comp.net)/4);
+	for(var lenght in Student.points){
+       console.log(Student[lenght]);
+}
 }
 </script>
 
