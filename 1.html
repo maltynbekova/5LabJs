@@ -5,27 +5,33 @@ Student = {}
 Student['name'] = "Maira"
 Student['surname'] = "Altynbekova"
 Student['specialty'] = "computer science"
-
 Student.points = {
 "js" : 100,
 "stp" : 100, 
 "ps" : 100,
 "comp.net" : 100
 }
+
+Student1 = {
+	name: "Zhanerke",
+	surname: "Musirali"
+}
+var array = []
+array.push(Student)
+array.push(Student1)
+console.log(Student);
+
 console.log(Student["surname"]);
-
 console.log(Student.points.js);
-
 delete Student.name;
 console.log(Student.name); 
-
 Student.name="Zhanerke"
 console.log(Student.name);
 
 function calc(Student){
-
-	return Student.points.stp+Student.points.js
+	return ((Student.points.stp+Student.points.js+Student.points.ps+Student.points.comp.net)/4);
 }
-
-
 </script>
+
+
+
